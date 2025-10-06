@@ -1,0 +1,24 @@
+print("kaviya Computer Mart")
+print("Nehru street,Puducherry")
+print("------------------------")
+print("Bill Receipt")
+print("------------")
+no=int(input("Enter the Item no:"))
+name=input("Enter the Particular:")
+rate=int(input("Enter the Rate:"))
+qty=int(input("Enter the Quantity:"))
+total=rate*qty
+print("Total amount in Rupees:",total)
+if(total>=100000):
+  gst=total*10/100
+elif(total>=50000):
+  gst=total*5/100
+elif(total>=20000):
+  gst=total*3/100
+elif(total>=10000):
+  gst=total*2/100
+else:
+  gst=total*1/100
+print("GST(Good and Services Tax):",gst)
+amount=total+gst
+print("Amount to be Paid:",amount)
